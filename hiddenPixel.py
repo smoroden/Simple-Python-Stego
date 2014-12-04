@@ -10,7 +10,8 @@ out_path = None
 file_path = None
 mode_value = None
 # to test encoding
-# -p 363 -i test.jpg -o test2.jpg -f test.txt -m encode
+# -p 363 -i test.jpg -o test2.bmp -f test.txt -m encode
+# -p 363 -i test2.bmp  -f dnsspoof2.rb -m decode
 
 try:
     opts, args = getopt.getopt(sys.argv[1:], 'p:i:o:f:m:h', ['pixel=', 'image=', 'out=', 'file=', 'mode=', 'help'])

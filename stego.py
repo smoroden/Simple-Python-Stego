@@ -32,11 +32,11 @@ def encode(img_path, file_path, p, out_path):
 def decode(img_path, file_path, p):
     img = Image.open(img_path)
     pixels = img.load()
-    print pixels[0,363]
+    #print pixels[0,363]
     f = open(file_path, 'w+')
 
     counter = 0
-    print p
+    #print p
     for i in range(img.size[0]):
         for j in range(img.size[1]):
             if counter % int(p) == 0:
